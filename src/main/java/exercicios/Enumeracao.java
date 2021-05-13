@@ -1,7 +1,5 @@
 package exercicios;
 
-import java.util.Scanner;
-
 public class Enumeracao {
 
     public void usandoEnumerador()  {
