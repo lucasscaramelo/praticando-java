@@ -45,6 +45,6 @@ public class Excecoes {
     }
 
     public void excecoesPersonalizadas() {
-        
+
     }
 }
