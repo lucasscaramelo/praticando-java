@@ -1,9 +1,6 @@
 package exercicios;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class OperacoesSet {
 
@@ -53,5 +50,26 @@ public class OperacoesSet {
         for (String p: set) {
             System.out.println(p);
         }
+    }
+
+    public void metodosSet() {
+
+        Set<Integer> a = new TreeSet<>(Arrays.asList(0,2,4,5,6,8,10));
+        Set<Integer> b = new TreeSet<>(Arrays.asList(5,6,8,10));
+
+        // União
+        Set<Integer> c = new TreeSet<>(a);
+        c.addAll(b);
+        System.out.println(c);
+
+        // Intersecção
+        Set<Integer> d = new TreeSet<>(a);
+        d.retainAll(b);
+        System.out.println(d);
+
+        // Diferença
+        Set<Integer> e = new TreeSet<>(a);
+        e.removeAll(b);
+        System.out.println(e);
     }
 }
